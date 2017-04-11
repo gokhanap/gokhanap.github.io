@@ -1,0 +1,16 @@
+/*
+img, embed, object, video {
+    max-width: 100%;
+}
+*/
+/*
+nav a {
+    padding: 1.5em;
+}
+*/
+
+@media screen and (min-width: 500px) {
+body {
+    background-color: #ccc;
+}
+}
