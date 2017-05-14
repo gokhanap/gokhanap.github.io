@@ -3,70 +3,160 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gokhan Apaydin Portfolio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/jquery-3.2.0.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <title>Gokhan Apaydin Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="icon" href="img/g-icon-03.png">
 </head>
 
 <body>
+
+    <!-- HEADER -->
+    <header id="home">
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#welcome"><img alt="Brand" src="img/logo.svg" height="32px">
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a href="#about">About</a>
+                        </li>
+                        <li><a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li><a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- WELCOME (FLEX)-->
+    <section id="welcome">
+        <div id="message">
+            <h1 id="name">Gökhan Apaydın<br></h1>
+            <h3 id="role">Front-end Web Developer</h3>
+        </div>
+    </section>
+
+    <!-- ABOUT (BOOTSTRAP)-->
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="img/logo.jpg" class="img-responsive" alt="logo">
+        <section id="about">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>About</h2>
+                </div>
             </div>
-            <div class="col-md-6 text-right">
-                <h1>Gökhan Apaydın<br><small>Front-end Ninja</small></h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="bio">
+                        <div class="biopic-container"><img src="img/propic.jpg" class="biopic" alt="Photo of Gökhan">
+                        </div>
+                        <div id="about-message">
+                            <p><i class="fa fa-quote-left fa-pull-left" aria-hidden="true"></i>Hello! My name is Gökhan.
+                                <br>I am a front-end web developer
+                                <br>equiped with design skills.<i class="fa fa-quote-right fa-pull-right" aria-hidden="true"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <img src="img/banner.png" class="img-responsive" alt="banner">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <h2>Featured Work</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <img src="img/555x300" class="img-responsive" data-toggle="modal" data-target="#project1">
-            <h3>Appify</h3>
-            <p><a href="http://github.com/">Link to project</a></p>
-          </div>
-          <div class="col-md-6">
-            <img src="img/555x300" class="img-responsive">
-            <h3>Appify</h3>
-            <p><a href="http://github.com/">Link to project</a></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <img src="img/555x300" class="img-responsive">
-            <h3>Appify</h3>
-            <p><a href="http://github.com/">Link to project</a></p>
-          </div>
-          <div class="col-md-6">
-            <img src="img/555x300" class="img-responsive">
-            <h3>Appify</h3>
-            <p><a href="http://github.com/">Link to project</a></p>
-          </div>
-        </div>
+        </section>
+
+        <!-- PORTFOLIO (BOOTSTRAP)-->
+        <section id="portfolio">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Portfolio</h2>
+                </div>
+            </div>
+            <div class="row">
+                <article class="col-md-6">
+                    <img src="img/project1_500.jpg" srcset="img/project1_500.jpg 500w, img/project1_800.jpg 800w, img/project1_1200.jpg 1200w" sizes="100%" class="img-responsive" alt="Project1 screenshot" data-toggle="modal" data-target="#project1">
+                    <h3>Interactive Resume</h3>
+                    <p><a href="resume/index.html" target="_blank">Link to project</a>
+                    </p>
+                </article>
+                <article class="col-md-6">
+                    <img src="img/project2_500.jpg" srcset="img/project2_500.jpg 500w, img/project2_800.jpg 800w, img/project2_1200.jpg 1200w" sizes="100%" class="img-responsive" alt="Project2 screenshot" data-toggle="modal" data-target="#project2">
+                    <h3>Classic Arcade Game Clone</h3>
+                    <p><a href="arcade-game/index.html" target="_blank">Link to project</a>
+                    </p>
+                </article>
+            </div>
+
+            <div class="row">
+                <article class="col-md-6">
+                    <img src="img/project3_500.jpg" srcset="img/project3_500.jpg 500w, img/project3_800.jpg 800w, img/project3_1200.jpg 1200w" sizes="100%" class="img-responsive" alt="Project3 screenshot" data-toggle="modal" data-target="#project3">
+                    <h3>Website Optimization</h3>
+                    <p><a href="optimization/index.html" target="_blank">Link to project</a>
+                    </p>
+                </article>
+                <article class="col-md-6">
+                    <img src="img/project4_500.jpg" srcset="img/project4_500.jpg 500w, img/project4_800.jpg 800w, img/project4_1200.jpg 1200w" sizes="100%" class="img-responsive" alt="Project4 screenshot" data-toggle="modal" data-target="#project4">
+                    <h3>Neighbourhood Map</h3>
+                    <p><a href="neighborhood/index.html" target="_blank">Link to project</a>
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT (BOOTSTRAP)-->
+        <section id="contact">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Contact</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <a href="mailto:gapay84@gmail.com">
+                        <div class="contact-item">
+                            <span class="fa fa-envelope fa-3x"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <a href="https://github.com/gokhanap" target="_blank">
+                        <div class="contact-item">
+                            <span class="fa fa-github-alt fa-3x"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <a href="https://www.linkedin.com/in/gapaydin" target="_blank">
+                        <div class="contact-item">
+                            <span class="fa fa-linkedin fa-3x"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <!-- Modal -->
+    <!-- Modal-->
+    <!-- Project1 -->
     <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                    <h4 class="modal-title" id="myModalLabel">Interactive Resume</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="./img/555x300">
-                    This was my first project in this class. I learned a lot about HTML and CSS.
+                    <img class="img-responsive" src="./img/project1_800.jpg"> This is an interactive resume application that reads resume content from a JSON file and dynamically displays that content within a provided template.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -75,16 +165,66 @@
         </div>
     </div>
 
+    <!-- Project2 -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Classic Arcade Game Clone</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="./img/project2_800.jpg"> Recreation of the classic arcade game Frogger.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project3 -->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Website Optimization</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="./img/project3_800.jpg"> Optimization of a provided website with a number of optimization- and performance-related issues so that it achieves a target PageSpeed score and runs at 60 frames per second.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project4 -->
+    <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Neighborhood Map</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="./img/project4_800.jpg"> A single-page application featuring a map of a neighborhood. Addded additional functionality to the application, including: map markers to identify popular locations, a search function to easily discover these locations, and a listview to support simple browsing of all locations.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/myjavascript.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
-
-
-
-<html class="web-developer graphic-designer" id="gokhan-apaydin"></html>
-
-
-
-
-
-
