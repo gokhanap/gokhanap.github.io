@@ -139,12 +139,12 @@ article {
 }
 
 /* Media Queries */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     .contact-item {
-        height: 90px;
-        width: 90px;
-        margin: 10px 10px 10px 10px;
-        line-height: 100px;
+        height: 80px;
+        width: 80px;
+        margin: 8px 8px 8px 8px;
+        line-height: 90px;
     }
     #contact>.row:nth-child(2) {
         padding-top: 0;
