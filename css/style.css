@@ -49,7 +49,7 @@ article {
     background-position: center;
 }
 #message {
-    display: flex justify-content: flex-end;
+    /* display: flex justify-content: flex-end; */
     margin-left: auto;
     margin-right: 5%;
 }
